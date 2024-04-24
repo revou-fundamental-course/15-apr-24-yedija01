@@ -10,12 +10,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #020d45;
-    background: linear-gradient(90deg, #5936b4 0%, #362a84 100%);
     color: #222;
     font-size: 1rem;
-
+    background-image: url(https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-3_1562-740.jpg?t=st=1713915252~exp=1713918852~hmac=e97211480336fa4dbf0f9114b077659560edd9c87617bc1fa3875f9917636ee2&w=1060);
+    background-position: center;
+    background-size: cover;
+    cursor: url("image.png"), auto;
 }
+
+
 
 .temperature-converter{
     background: #fff;
@@ -35,11 +38,73 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    align-items: center;
     font-weight: 700;
+    align-items: center;
     margin-bottom: 40px;
 }
 
 .title{
-    
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 20px;
+}
+
+.result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.celsius-value{
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+label{
+    color: #555;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+input, select{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#convert-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(#3633f3, #120fb9);
+    color: #f6f6f6;
+    padding: 12px 80px;
 }
