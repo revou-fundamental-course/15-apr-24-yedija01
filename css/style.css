@@ -12,7 +12,7 @@ body{
     align-items: center;
     color: #222;
     font-size: 1rem;
-    background-image: url(https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-3_1562-740.jpg?t=st=1713915252~exp=1713918852~hmac=e97211480336fa4dbf0f9114b077659560edd9c87617bc1fa3875f9917636ee2&w=1060);
+    background-image: url(/css/Picture/backiee-183926-landscape.jpg);
     background-position: center;
     background-size: cover;
     cursor: url("/css/Picture/hot-cursor.png"), auto;
@@ -60,6 +60,7 @@ input, select{
     border-bottom: 2px solid #ccc;
     padding: 8px;
     margin-bottom: 15px;
+    cursor: url("/css/Picture/hot-cursor.png"), auto;
 }
 
 input::-webkit-outer-spin-button,
