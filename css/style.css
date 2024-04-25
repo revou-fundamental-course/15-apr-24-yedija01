@@ -12,7 +12,7 @@ body{
     align-items: center;
     color: #222;
     font-size: 1rem;
-    background-image: url(/css/Picture/backiee-183926-landscape.jpg);
+    background-image: url("/css/Picture/backiee-183926-landscape.jpg");
     background-position: center;
     background-size: cover;
     cursor: url("/css/Picture/hot-cursor.png"), auto;
