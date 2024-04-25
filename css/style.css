@@ -16,6 +16,7 @@ body{
     background-position: center;
     background-size: cover;
     cursor: url("/css/Picture/hot-cursor.png"), auto;
+    background-color: #020d45;
 }
 
 .temperature-converter{
