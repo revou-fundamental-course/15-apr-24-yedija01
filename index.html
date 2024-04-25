@@ -14,7 +14,7 @@
     />
     <!-- fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 <body>
     <div class="container">
@@ -31,30 +31,26 @@
 
             <h2 class="title">Temperature Converter</h2>
 
-            <!-- showing result -->
-            <div class="result">
-                <span class="result-heading">Result (Celsius)</span>
-                <h2 class="celsius-value" id="celsius"></h2>
-            </div>
+            
 
             <!-- input field -->
-            <div class="degree-type">
-                <!-- for degrees -->
-                <div class="degree-field">
-                    <label for="degree">Degree</label>
-                    <input type="number" name="degree" id="degree">
-                </div>
+            <div class="temperature">
+                <input type="number">
+                <select>
+                    <option selected>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+            </div>
 
-                <!-- for option selection -->
-                <div class="temp-field">
-                    <label for="temp-type">Type</label>
-                    <select name="temperatures" id="temp-type" autocomplete="on">
-                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
-                        <option value="kelvin" id="kelvin">Kelvin</option>
-                        
-                    </select>
-                </div>
-
+            <!-- result field -->
+            <div class="result">
+                <input type="number" readonly>
+                <select>
+                    <option selected>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
             </div>
 
             <button id="convert-btn">Convert</button>

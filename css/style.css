@@ -15,10 +15,8 @@ body{
     background-image: url(https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-3_1562-740.jpg?t=st=1713915252~exp=1713918852~hmac=e97211480336fa4dbf0f9114b077659560edd9c87617bc1fa3875f9917636ee2&w=1060);
     background-position: center;
     background-size: cover;
-    cursor: url("image.png"), auto;
+    cursor: url("/css/Picture/hot-cursor.png"), auto;
 }
-
-
 
 .temperature-converter{
     background: #fff;
@@ -49,36 +47,6 @@ body{
     text-align: center;
 }
 
-.result{
-    text-align: center;
-    margin: 20px;
-}
-
-.result-heading{
-    color: #555;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.celsius-value{
-    border-bottom: 2px solid #ccc;
-    padding: 10px;
-    transition: all .45s ease;
-}
-
-.degree-type{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.degree-field{
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-}
-
 label{
     color: #555;
     font-size: .8rem;
@@ -103,8 +71,27 @@ input::-webkit-inner-spin-button {
 #convert-btn{
     border: none;
     outline: none;
-    border-radius: 5px;
-    background: linear-gradient(#3633f3, #120fb9);
-    color: #f6f6f6;
+    border-radius: 50px;
+    background: #ebeef1;
+    color: #00a037;
     padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+/* add neumorphic button style */
+#convert-btn:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+    cursor: pointer;
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
 }
